@@ -25,18 +25,16 @@ def save_data(no_of_time_hand_detected, no_of_time_hand_crossed):
     try:   
         today = date.today()
         today=str(today)
-        #loc = (r'C:\Users\rahul.tripathi\Desktop\result.xls') 
       
         rb = xlrd.open_workbook('result.xls')
         sheet = rb.sheet_by_index(0) 
         sheet.cell_value(0, 0) 
       
          
-        #print(sheet.nrows)
         q=sheet.cell_value(sheet.nrows-1,1)
         
         rb = xlrd.open_workbook('result.xls') 
-        #rb = xlrd.open_workbook(loc) 
+         
         wb=copy(rb)
         w_sheet=wb.get_sheet(0)
         

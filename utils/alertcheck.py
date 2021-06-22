@@ -34,8 +34,12 @@ def drawboxtosafeline(image_np,p1,p2,Line_Position2,Orientation):
              #crossed+=1
              posii=int(image_np.shape[1]/2)        
              cv2.putText(image_np, "ALERT", (posii, 50),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0,0), 2)
-			 #sound = os.path.join()
+		
+	    #  FOR WINDOWS
+	    #  sound = os.path.join()
             #  playsound("/media/anubhav/my_setup/vision/shredder_machine/shredder-machine/utils/alert.wav")
+	
+	    #  FOR LINUX
              pygame.mixer.init()
              pygame.mixer.music.load("/media/anubhav/my_setup/vision/shredder_machine/shredder-machine/utils/alert.wav")
              pygame.mixer.music.play()

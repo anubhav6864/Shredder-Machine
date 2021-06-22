@@ -62,14 +62,8 @@ def draw_box_on_image(num_hands_detect, score_thresh, scores, boxes, classes, im
         
         if (scores[i] > score_thresh):
         
-            #no_of_times_hands_detected+=1
-            #b=b+1
-            #b=1
-            #print(b)
             if classes[i] == 1: 
                 id = 'hand'
-                #b=1
-            
                 
             if classes[i] == 2:
                 id ='gloved_hand'
